@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+header {
+  color: #000;
+  background-color: brown;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.barrabusqueda {
+  height: 80%;
+  width: 400px;
+  padding: 15px;
+}
+
+nav ul {
+  height: auto;
+  height: 100%;
+  justify-items: center;
+}
+
+nav li {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+nav li:hover {
+  background-color: #0ff;
+  text-decoration: underline;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  padding-top: 5px;
+}
+
+/*# sourceMappingURL=index.034b6250.css.map */
