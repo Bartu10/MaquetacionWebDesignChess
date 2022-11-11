@@ -1,0 +1,44 @@
+
+body{
+    margin: 0;
+}
+
+header{
+    color: black;
+    background-color: brown;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barrabusqueda{
+    padding: 15px;
+    height: 80%;
+    width: 400px;
+}
+
+nav ul{
+    justify-items: center;
+    height: auto;
+    height: 100%;
+}
+
+nav li{
+padding: 10px;
+display: inline-block;
+text-align: center;
+font-size: 20px;
+}
+
+nav li:hover{
+    text-decoration:underline;
+    background-color: aqua;
+}
+
+.logo{
+    padding-top: 5px;
+    height: 60px;
+    width: 60px;
+}
+
+
