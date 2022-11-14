@@ -1,10 +1,19 @@
+@font-face {
+  font-family: architects_daughterregular;
+  src: url("ArchitectsDaughter-Regular.ea844ea7.ttf") format("woff2"), url("ArchitectsDaughter-Regular.ea844ea7.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
+  font-family: architects_daughterregular;
 }
 
 header {
-  color: #000;
-  background-color: brown;
+  color: #fff;
+  height: 20%;
+  background-color: #513a22;
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -37,7 +46,38 @@ nav li:hover {
 .logo {
   height: 60px;
   width: 60px;
-  padding-top: 5px;
+}
+
+.chess {
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+.section1 {
+  position: relative;
+}
+
+.imginicio {
+  width: 100%;
+}
+
+.textoinicio {
+  color: #fff;
+  background-color: #513a22;
+  border: 2px solid #513a22;
+  padding: 2%;
+  font-size: 300%;
+  font-weight: 100;
+  position: absolute;
+  top: 60%;
+  right: 32%;
+}
+
+span {
+  font-size: 250%;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */

@@ -1,14 +1,21 @@
-
+@font-face {
+    font-family: 'architects_daughterregular';
+    src: url('fonts/Architects-Daughter-Regular/architectsdaughter/ArchitectsDaughter-Regular.ttf') format('woff2'),
+         url('fonts/Architects-Daughter-Regular/architectsdaughter/ArchitectsDaughter-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     margin: 0;
+    font-family: 'architects_daughterregular' ;
 }
-
 header{
-    color: black;
-    background-color: brown;
+    color: white;
+    background-color: #513A22;
     display: flex;    
     justify-content: space-between;
     align-items: center;
+    height: 20%;
 }
 
 .barrabusqueda{
@@ -36,9 +43,41 @@ nav li:hover{
 }
 
 .logo{
-    padding-top: 5px;
     height: 60px;
     width: 60px;
+}
+
+.chess{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1{
+position: relative;
+}
+
+.imginicio{
+    width: 100%;
+}
+
+.textoinicio{
+    position: absolute;
+    top: 60%;
+    right: 32%;
+    border: solid 2px #513A22;
+    background-color: #513A22;
+    padding: 2%;
+    color: white;
+    font-size: 300%;
+    font-weight: 100;
+    
+}
+
+span{
+    font-size: 250%;
 }
 
 
