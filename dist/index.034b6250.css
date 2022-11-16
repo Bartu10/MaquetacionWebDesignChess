@@ -6,14 +6,15 @@
 }
 
 body {
+  background-color: #c7a98a;
   margin: 0;
   font-family: architects_daughterregular;
 }
 
 header {
-  color: #fff;
+  color: #000;
   height: 20%;
-  background-color: #513a22;
+  background-color: #c7a98a;
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -34,12 +35,11 @@ nav ul {
 nav li {
   text-align: center;
   padding: 10px;
-  font-size: 20px;
+  font-size: 140%;
   display: inline-block;
 }
 
 nav li:hover {
-  background-color: #0ff;
   text-decoration: underline;
 }
 
@@ -57,7 +57,9 @@ nav li:hover {
 }
 
 .section1 {
+  height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .imginicio {
@@ -65,9 +67,8 @@ nav li:hover {
 }
 
 .textoinicio {
-  color: #fff;
-  background-color: #513a22;
-  border: 2px solid #513a22;
+  background-color: #c7a98a;
+  border: 2px solid #c7a98a;
   padding: 2%;
   font-size: 300%;
   font-weight: 100;
@@ -76,8 +77,40 @@ nav li:hover {
   right: 32%;
 }
 
+.textosubmenu {
+  color: #000;
+  text-align: center;
+  font-size: 300%;
+  font-weight: 100;
+}
+
 span {
   font-size: 250%;
+}
+
+.ubi {
+  text-decoration: overline;
+}
+
+.ubi:hover {
+  text-decoration: none;
+}
+
+#ciudad1 {
+  transform: rotate(90deg);
+}
+
+.rrss {
+  align-items: center;
+  display: flex;
+}
+
+footer {
+  background-color: #7d5a35;
+  justify-content: space-between;
+  padding-left: 1%;
+  padding-right: 1%;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */

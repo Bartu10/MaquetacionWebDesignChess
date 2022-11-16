@@ -8,10 +8,12 @@
 body{
     margin: 0;
     font-family: 'architects_daughterregular' ;
+    background-color: #C7A98A;
 }
+
 header{
-    color: white;
-    background-color: #513A22;
+    color: black;
+    background-color: #C7A98A;
     display: flex;    
     justify-content: space-between;
     align-items: center;
@@ -34,12 +36,11 @@ nav li{
 padding: 10px;
 display: inline-block;
 text-align: center;
-font-size: 20px;
+font-size: 140%;
 }
 
 nav li:hover{
     text-decoration:underline;
-    background-color: aqua;
 }
 
 .logo{
@@ -57,27 +58,66 @@ nav li:hover{
 
 .section1{
 position: relative;
+height: 100vh;
+overflow: hidden;
 }
 
 .imginicio{
     width: 100%;
+
 }
 
 .textoinicio{
     position: absolute;
     top: 60%;
     right: 32%;
-    border: solid 2px #513A22;
-    background-color: #513A22;
+    border: solid 2px #C7A98A;
+    background-color: #C7A98A;
     padding: 2%;
-    color: white;
+    
     font-size: 300%;
     font-weight: 100;
     
 }
 
+
+.textosubmenu{
+    color: black;
+    font-size: 300%;
+    font-weight: 100;
+    text-align: center;
+}
+
+
 span{
     font-size: 250%;
+}
+
+.ubi{
+    text-decoration: overline;
+    
+}
+
+.ubi:hover{
+    text-decoration: none;
+}
+
+#ciudad1{
+    transform: rotate(90deg); 
+    transform: rotate(-90deg);
+}
+
+.rrss{
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    background-color: #7D5A35;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 1% ;
 }
 
 
