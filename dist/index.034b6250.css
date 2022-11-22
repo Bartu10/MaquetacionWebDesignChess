@@ -6,9 +6,14 @@
 }
 
 body {
+  cursor: url("https://cur.cursors-4u.net/sports/spo-7/spo722.cur"), auto;
   background-color: #c7a98a;
   margin: 0;
   font-family: architects_daughterregular;
+}
+
+span {
+  font-size: 250%;
 }
 
 header {
@@ -20,35 +25,36 @@ header {
   display: flex;
 }
 
-.barrabusqueda {
+header .barrabusqueda {
   height: 80%;
   width: 400px;
   padding: 15px;
 }
 
-nav ul {
+header nav ul {
   height: auto;
   height: 100%;
   justify-items: center;
 }
 
-nav li {
+header nav li {
   text-align: center;
+  color: #000;
   padding: 10px;
   font-size: 140%;
   display: inline-block;
 }
 
-nav li:hover {
+header nav li:hover {
   text-decoration: underline;
 }
 
-.logo {
+header .logo {
   height: 60px;
   width: 60px;
 }
 
-.chess {
+header .chess {
   color: #000;
   justify-content: center;
   align-items: center;
@@ -84,10 +90,6 @@ nav li:hover {
   font-weight: 100;
 }
 
-span {
-  font-size: 250%;
-}
-
 .ubi {
   text-decoration: overline;
 }
@@ -96,13 +98,36 @@ span {
   text-decoration: none;
 }
 
-#ciudad1 {
+.tab {
+  justify-content: space-around;
+  display: flex;
+}
+
+.section2 div {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: large;
+  display: flex;
+}
+
+.section2 #city1 {
+  position: absolute;
+  top: 155%;
+  left: 0%;
+  transform: rotate(-90deg);
+}
+
+.section2 #city2 {
+  position: absolute;
+  top: 155%;
+  right: 0%;
   transform: rotate(90deg);
 }
 
-.rrss {
-  align-items: center;
-  display: flex;
+.section2 .gifs img {
+  height: 600px;
+  width: 600px;
+  padding-bottom: 4%;
 }
 
 footer {
@@ -110,6 +135,11 @@ footer {
   justify-content: space-between;
   padding-left: 1%;
   padding-right: 1%;
+  display: flex;
+}
+
+footer .rrss {
+  align-items: center;
   display: flex;
 }
 

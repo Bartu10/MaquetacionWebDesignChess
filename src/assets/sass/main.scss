@@ -9,6 +9,11 @@ body{
     margin: 0;
     font-family: 'architects_daughterregular' ;
     background-color: #C7A98A;
+    cursor: url(https://cur.cursors-4u.net/sports/spo-7/spo722.cur), auto ; 
+}
+
+span{
+    font-size: 250%;
 }
 
 header{
@@ -18,42 +23,37 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 20%;
-}
-
-.barrabusqueda{
-    padding: 15px;
-    height: 80%;
-    width: 400px;
-}
-
-nav ul{
-    justify-items: center;
-    height: auto;
-    height: 100%;
-}
-
-nav li{
-padding: 10px;
-display: inline-block;
-text-align: center;
-font-size: 140%;
-}
-
-nav li:hover{
-    text-decoration:underline;
-}
-
-.logo{
-    height: 60px;
-    width: 60px;
-}
-
-.chess{
-    text-decoration: none;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .barrabusqueda{
+        padding: 15px;
+        height: 80%;
+        width: 400px;
+    }
+    nav ul{
+        justify-items: center;
+        height: auto;
+        height: 100%;
+    }
+    nav li{
+        padding: 10px;
+        display: inline-block;
+        text-align: center;
+        font-size: 140%;
+        color: black;    
+    }
+    nav li:hover{
+        text-decoration:underline;
+    }
+    .logo{
+        height: 60px;
+        width: 60px;
+    }
+    .chess{
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .section1{
@@ -73,8 +73,7 @@ overflow: hidden;
     right: 32%;
     border: solid 2px #C7A98A;
     background-color: #C7A98A;
-    padding: 2%;
-    
+    padding: 2%;    
     font-size: 300%;
     font-weight: 100;
     
@@ -88,11 +87,6 @@ overflow: hidden;
     text-align: center;
 }
 
-
-span{
-    font-size: 250%;
-}
-
 .ubi{
     text-decoration: overline;
     
@@ -102,14 +96,38 @@ span{
     text-decoration: none;
 }
 
-#ciudad1{
-    transform: rotate(90deg); 
-    transform: rotate(-90deg);
+.tab{
+    display: flex;
+    justify-content: space-around;
 }
 
-.rrss{
+.section2 {
+    
+    div{
+    font-size: large;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+
+    #city1{
+        position: absolute;
+        left: 0%;
+        top: 155%;
+        transform: rotate(-90deg);
+    }
+    #city2{
+        position: absolute;
+        right: 0%;
+        top: 155%;
+        transform: rotate(90deg);
+
+    }
+    .gifs img{
+        height: 600px;
+        width: 600px;
+        padding-bottom: 4%;
+        }
 }
 
 footer{
@@ -117,7 +135,11 @@ footer{
     display: flex;
     justify-content: space-between;
     padding-left: 1%;
-    padding-right: 1% ;
+    padding-right: 1%;
+    .rrss{
+        display: flex;
+        align-items: center;
+    }
 }
 
 

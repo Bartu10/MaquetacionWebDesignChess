@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'architects_daughterregular';
+    src: url('fonts/Architects-Daughter-Regular/architectsdaughter/ArchitectsDaughter-Regular.ttf') format('woff2'),
+         url('fonts/Architects-Daughter-Regular/architectsdaughter/ArchitectsDaughter-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    color: black;
+    background-color: #C7A98A;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    .barrabusqueda{
+        padding: 15px;
+        height: 80%;
+        width: 400px;
+    }
+    nav ul{
+        justify-items: center;
+        height: auto;
+        height: 100%;
+    }
+    nav li{
+        padding: 10px;
+        display: inline-block;
+        text-align: center;
+        font-size: 140%;
+        color: black;    
+    }
+    nav li:hover{
+        text-decoration:underline;
+    }
+    .logo{
+        height: 60px;
+        width: 60px;
+    }
+    .chess{
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+body{
+    margin: 0;
+    font-family: 'architects_daughterregular' ;
+    background-color: #CEBFAF;
+    cursor: url(https://cur.cursors-4u.net/sports/spo-7/spo722.cur), auto ; 
+}   
+span{
+    font-size: 250%;
+}
+
+section{
+    margin: 5%;
+    border: solid 1px black;
+    padding: 10%;
+    border-radius: 60px;
+    background-color: #C7A98A;
+}
+
+
+
+footer{
+    background-color: #7D5A35;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 1%;
+    .rrss{
+        display: flex;
+        align-items: center;
+    }
+}
