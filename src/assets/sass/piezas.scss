@@ -56,15 +56,97 @@ span{
 }
 
 section{
-    margin: 5%;
+    margin: 1%;
     border: solid 1px black;
-    padding: 10%;
+    padding: 8%;
     border-radius: 60px;
     background-color: #C7A98A;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    div{
+        text-align: center;
+        align-content: center;
+        width: 200px;
+    }
+    img{
+        height: 497px;
+        width: 200px;
+    }
 }
 
-
-
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+#popupBody{
+    bottom: 30%;
+    .sendClean{
+        input{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    input{
+        height: 20px;
+        width: 100%;
+    }
+    .buttonSend {
+        background-color: #4CAF50;
+        width: 48%;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+    }
+    .buttonClean{
+        background-color: #F00;
+        width: 48%;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+    }
+    font-size: 20px;
+    width: 20%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #7D5A35;
+    background: #C7A98A;
+    position: relative;
+    transition: all 5s ease-in-out;
+    margin: 20% auto;    
+}
+#cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+}
 footer{
     background-color: #7D5A35;
     display: flex;

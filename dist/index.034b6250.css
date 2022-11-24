@@ -1,3 +1,11 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-moz-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: architects_daughterregular;
   src: url("ArchitectsDaughter-Regular.ea844ea7.ttf") format("woff2"), url("ArchitectsDaughter-Regular.ea844ea7.ttf") format("woff");

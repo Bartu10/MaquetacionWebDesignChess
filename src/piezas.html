@@ -14,20 +14,35 @@
         <input class ="barrabusqueda" type="text" name="nombrecompleto" placeholder="Ej: Rey">
         <nav>
             <ul>
-                <li>Login</li>  
+                <li><a href="#popup">Login</a></li>
                 <li>Piezas</li> 
                 <li>Contacto</li>
             </ul>
         </nav>
     </header>
     <section>
-        <img src="assets/images/Reyreyb.png" alt="rey">
-        <img src="assets/images/Reinab.png" alt="reina">
-        <img src="assets/images/Alfilb.png" alt="alfil">
-        <img src="assets/images/caballob.png" alt="caballo">
-        <img src="assets/images/torreb.png" alt="torre">
-        <img src="assets/images/peonb.png" alt="peon">
+        <div><a href="pieza.html"><img src="assets/images/Reyreyb.png" alt="rey"><span>REY</span></a></div>
+        <div><a></a><img src="assets/images/Reinab.png" alt="reina"><span>REINA</span></a></div>
+        <div><a></a><img src="assets/images/Alfilb.png" alt="alfil"><span>ALFIL</span></a></div>
+        <div><a></a><img src="assets/images/caballob.png" alt="caballo"><span>CABALLO</span></a></div>
+        <div><a></a><img src="assets/images/torreb.png" alt="torre"><span>TORRE</span></a></div>
+        <div><a><img src="assets/images/peonb.png" alt="peon"><span>PEÓN</span></a></div>
+
     </section>
+    <div id="popup" class="overlay">
+        <div id="popupBody">
+            <h2>Login</h2>
+            <a id="cerrar" href="#">&times;</a>
+            <div class="popupContent">
+                <form action="ejemplo.php" method="get">
+                    <p>Username: <input type="text" name="nombre" size="40"></p>
+                    <p>Password: <input type="password" name="password" size="40"></p>
+                      <div class="sendClean"><input type="button" class="buttonSend" value="Enviar">
+                      <input type="reset" class="buttonClean" value="Borrar"></div>
+                  </form>
+            </div>
+        </div>
+    </div>
     <footer>
         <span>@ 2022 Cádiz ESP, Inc All rights reserved.</span>
         <div class="rrss">

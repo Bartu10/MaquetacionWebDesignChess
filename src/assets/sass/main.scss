@@ -1,3 +1,9 @@
+::-webkit-scrollbar {
+    display: none;
+}
+::-moz-scrollbar {
+    display: none;
+}
 @font-face {
     font-family: 'architects_daughterregular';
     src: url('fonts/Architects-Daughter-Regular/architectsdaughter/ArchitectsDaughter-Regular.ttf') format('woff2'),
@@ -10,6 +16,7 @@ body{
     font-family: 'architects_daughterregular' ;
     background-color: #C7A98A;
     cursor: url(https://cur.cursors-4u.net/sports/spo-7/spo722.cur), auto ; 
+
 }
 
 span{
