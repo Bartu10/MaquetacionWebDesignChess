@@ -78,9 +78,19 @@ section{
         width: 200px;
     }
     article{
-        .espec{
+        h1{
+            font-size: xx-large;
+            text-decoration: underline;
+        }
+        span{
+            font-size: x-large;
+
+        }
+        .bloq{
+            padding: 1cm;
             border: solid #7D5A35 1px;
             background-color: #7D5A35;
+
         }
     }
 }
