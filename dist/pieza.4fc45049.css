@@ -88,8 +88,8 @@ section img {
   width: 200px;
 }
 
-.espec {
-  background-color: #00f;
+section article .espec {
+  background-color: #7d5a35;
   border: 1px solid #7d5a35;
 }
 

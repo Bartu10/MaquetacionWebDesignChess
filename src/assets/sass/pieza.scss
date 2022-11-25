@@ -77,17 +77,13 @@ section{
         height: 497px;
         width: 200px;
     }
-
+    article{
+        .espec{
+            border: solid #7D5A35 1px;
+            background-color: #7D5A35;
+        }
+    }
 }
-
-.espec{
-    border: solid 1px #7D5A35;
-    background-color: blue;
-}
-
-
-
-
 
 .overlay {
     position: fixed;
