@@ -71,7 +71,7 @@ section {
   background-color: #c7a98a;
   border: 1px solid #000;
   border-radius: 60px;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 1%;
   padding: 8%;
   display: flex;
@@ -86,6 +86,10 @@ section div {
 section img {
   height: 497px;
   width: 200px;
+}
+
+section article {
+  width: 350px;
 }
 
 section article h1 {

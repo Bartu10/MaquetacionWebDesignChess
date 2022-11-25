@@ -67,7 +67,7 @@ section{
     border-radius: 60px;
     background-color: #C7A98A;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     div{
         text-align: center;
         align-content: center;
@@ -78,6 +78,7 @@ section{
         width: 200px;
     }
     article{
+        width: 350px;
         h1{
             font-size: xx-large;
             text-decoration: underline;
