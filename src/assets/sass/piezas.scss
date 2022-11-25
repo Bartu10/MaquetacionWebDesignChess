@@ -28,7 +28,13 @@ header{
         display: inline-block;
         text-align: center;
         font-size: 140%;
-        color: black;    
+        color: black;  
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+          
     }
     nav li:hover{
         text-decoration:underline;
