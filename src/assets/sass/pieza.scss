@@ -1,77 +1,20 @@
-@font-face {
-    font-family: 'architects_daughterregular';
-    src: url('fonts/Architects-Daughter-Regular/architectsdaughter/ArchitectsDaughter-Regular.ttf') format('woff2'),
-         url('fonts/Architects-Daughter-Regular/architectsdaughter/ArchitectsDaughter-Regular.ttf') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-header{
-    color: black;
-    background-color: #C7A98A;
-    display: flex;    
-    justify-content: space-between;
-    align-items: center;
-    height: 20%;
-    .barrabusqueda{
-        padding: 15px;
-        height: 80%;
-        width: 400px;
-    }
-    nav ul{
-        justify-items: center;
-        height: auto;
-        height: 100%;
-    }
-    nav li{
-        padding: 10px;
-        display: inline-block;
-        text-align: center;
-        font-size: 140%;
-        color: black;  
-        a{
-            text-decoration: none;
-            color: black;
-        }
-        
-          
-    }
-    nav li:hover{
-        text-decoration:underline;
-    }
-    .logo{
-        height: 60px;
-        width: 60px;
-    }
-    .chess{
-        text-decoration: none;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-body{
-    margin: 0;
-    font-family: 'architects_daughterregular' ;
-    background-color: #CEBFAF;
-    cursor: url(https://cur.cursors-4u.net/sports/spo-7/spo722.cur), auto ; 
-}   
+@import 'components';
+@import 'layout';
 
-span{
-    font-size: 250%;
-}
+
 section{
-    margin: 1%;
-    border: solid 1px black;
-    padding: 8%;
-    border-radius: 60px;
     background-color: #C7A98A;
+    border: solid 1px black;
+    border-radius: 60px;
     display: flex;
     justify-content: space-around;
+    margin: 1%;
+    padding: 8%;
     div{
-        text-align: center;
         align-content: center;
+        text-align: center;
         width: 200px;
+        
     }
     img{
         height: 497px;
@@ -88,93 +31,12 @@ section{
 
         }
         .bloq{
-            padding: 1cm;
-            border: solid #7D5A35 1px;
             background-color: #7D5A35;
+            border: solid #7D5A35 1px;
+            padding: 1cm;
 
         }
     }
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-}
-.overlay:target {
-    visibility: visible;
-    opacity: 1;
-}
-#popupBody{
-    bottom: 30%;
-    .sendClean{
-        input{
-            height: 100%;
-            width: 100%;
-        }
-    }
-    input{
-        height: 20px;
-        width: 100%;
-    }
-    .buttonSend {
-        background-color: #4CAF50;
-        width: 48%;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-    }
-    .buttonClean{
-        background-color: #F00;
-        width: 48%;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-    }
-    font-size: 20px;
-    width: 20%;
-    padding: 2%;
-    border-radius: 15px;
-    box-shadow: 0 0 5px #7D5A35;
-    background: #C7A98A;
-    position: relative;
-    transition: all 5s ease-in-out;
-    margin: 20% auto;    
-}
-#cerrar{
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #F00;
-}
-footer{
-    background-color: #7D5A35;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 1%;
-    padding-right: 1%;
-    .rrss{
-        display: flex;
-        align-items: center;
-    }
-}
+

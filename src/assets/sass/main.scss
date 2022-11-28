@@ -1,160 +1,75 @@
-::-webkit-scrollbar {
-    display: none;
-}
-::-moz-scrollbar {
-    display: none;
-}
-@font-face {
-    font-family: 'architects_daughterregular';
-    src: url('fonts/Architects-Daughter-Regular/architectsdaughter/ArchitectsDaughter-Regular.ttf') format('woff2'),
-         url('fonts/Architects-Daughter-Regular/architectsdaughter/ArchitectsDaughter-Regular.ttf') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import 'layout';
+@import 'components';
+
 body{
-    margin: 0;
-    font-family: 'architects_daughterregular' ;
     background-color: #C7A98A;
-    cursor: url(https://cur.cursors-4u.net/sports/spo-7/spo722.cur), auto ; 
-
 }
-
-span{
-    font-size: 250%;
-}
-
-header{
-    color: black;
-    background-color: #C7A98A;
-    display: flex;    
-    justify-content: space-between;
-    align-items: center;
-    height: 20%;
-    .barrabusqueda{
-        padding: 15px;
-        height: 80%;
-        width: 400px;
-    }
-    nav ul{
-        justify-items: center;
-        height: auto;
-        height: 100%;
-        display: flex;
-    }
-    nav li{
-        padding: 10px;
-        display: inline-block;
-        text-align: center;
-        font-size: 140%;
-        color: black;
-  
-    }
-    .perfilfoto{
-        height: 30px;
-        width: 30px;
-        
-        
-    }  
-    nav li:hover{
-        text-decoration:underline;
-    }
-    .logo{
-        height: 60px;
-        width: 60px;
-    }
-    .chess{
-        text-decoration: none;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
 .section1{
-position: relative;
-height: 100vh;
-overflow: hidden;
-}
-
-.imginicio{
-    width: 100%;
-
-}
-
-.textoinicio{
-    position: absolute;
-    top: 60%;
-    right: 32%;
-    border: solid 2px #C7A98A;
-    background-color: #C7A98A;
-    padding: 2%;    
-    font-size: 300%;
-    font-weight: 100;
-    
-}
-
-
-.textosubmenu{
-    color: black;
-    font-size: 300%;
-    font-weight: 100;
-    text-align: center;
-}
-
-.ubi{
-    text-decoration: overline;
-    
-}
-
-.ubi:hover{
-    text-decoration: none;
-}
-
-.tab{
-    display: flex;
-    justify-content: space-around;
-}
-
-.section2 {
-    
-    div{
-    font-size: large;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
     }
-
-    #city1{
+    .imginicio{
+        width: 100%;
+    
+    }
+    .textoinicio{
+        background-color: #C7A98A;
+        border: solid 2px #C7A98A;    
+        font-size: 300%;
+        font-weight: 100;
+        padding: 2%;
         position: absolute;
-        left: 0%;
-        top: 155%;
-        transform: rotate(-90deg);
+        right: 32%;
+        top: 60%;
+        
     }
-    #city2{
-        position: absolute;
-        right: 0%;
-        top: 155%;
-        transform: rotate(90deg);
-
+    .textosubmenu{
+        color: black;
+        font-size: 300%;
+        font-weight: 100;
+        text-align: center;
     }
-    .gifs img{
-        height: 600px;
-        width: 600px;
-        padding-bottom: 4%;
-        }
-}
-
-footer{
-    background-color: #7D5A35;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 1%;
-    padding-right: 1%;
-    .rrss{
+    
+    .ubi{
+        text-decoration: overline;
+        
+    }
+    
+    .ubi:hover{
+        text-decoration: none;
+    }
+    
+    .tab{
         display: flex;
-        align-items: center;
+        justify-content: space-around;
     }
-}
-
-
+    
+    .section2 {
+        
+        div{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: large;
+        justify-content: space-around;
+        }
+    
+        #city1{
+            left: 0%;
+            position: absolute;
+            top: 155%;
+            transform: rotate(-90deg);
+        }
+        #city2{
+            position: absolute;
+            right: 0%;
+            top: 155%;
+            transform: rotate(90deg);
+    
+        }
+        .gifs img{
+            height: 600px;
+            padding-bottom: 4%;
+            width: 600px;
+            }
+    }

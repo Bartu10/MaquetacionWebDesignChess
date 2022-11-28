@@ -1,54 +1,23 @@
-@font-face {
-  font-family: architects_daughterregular;
-  src: url("ArchitectsDaughter-Regular.ea844ea7.ttf") format("woff2"), url("ArchitectsDaughter-Regular.ea844ea7.ttf") format("woff");
-  font-weight: normal;
-  font-style: normal;
+::-webkit-scrollbar {
+  display: none;
 }
 
-header {
-  color: #000;
-  height: 20%;
-  background-color: #c7a98a;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
+::-moz-scrollbar {
+  display: none;
 }
 
-header .barrabusqueda {
+.barrabusqueda {
   height: 80%;
   width: 400px;
   padding: 15px;
 }
 
-header nav ul {
-  height: auto;
-  height: 100%;
-  justify-items: center;
-}
-
-header nav li {
-  text-align: center;
-  color: #000;
-  padding: 10px;
-  font-size: 140%;
-  display: inline-block;
-}
-
-header nav li a {
-  color: #000;
-  text-decoration: none;
-}
-
-header nav li:hover {
-  text-decoration: underline;
-}
-
-header .logo {
+.logo {
   height: 60px;
   width: 60px;
 }
 
-header .chess {
+.chess {
   color: #000;
   justify-content: center;
   align-items: center;
@@ -56,43 +25,14 @@ header .chess {
   display: flex;
 }
 
-body {
-  cursor: url("https://cur.cursors-4u.net/sports/spo-7/spo722.cur"), auto;
-  background-color: #cebfaf;
-  margin: 0;
-  font-family: architects_daughterregular;
-}
-
-span {
-  font-size: 250%;
-}
-
-section {
-  background-color: #c7a98a;
-  border: 1px solid #000;
-  border-radius: 60px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: baseline;
-  margin: 1%;
-  padding: 8%;
-  display: flex;
-}
-
-section div {
-  text-align: center;
-  width: 200px;
-  align-content: center;
-}
-
-section img {
-  height: 497px;
-  width: 200px;
+.perfilfoto {
+  height: 30px;
+  width: 30px;
 }
 
 .overlay {
-  visibility: hidden;
   opacity: 0;
+  visibility: hidden;
   background: #000000b3;
   transition: opacity .5s;
   position: fixed;
@@ -100,8 +40,8 @@ section img {
 }
 
 .overlay:target {
-  visibility: visible;
   opacity: 1;
+  visibility: visible;
 }
 
 #popupBody {
@@ -128,10 +68,10 @@ section img {
 }
 
 #popupBody .buttonSend {
-  width: 48%;
   color: #fff;
   text-align: center;
-  background-color: #4caf50;
+  width: 48%;
+  background-color: green;
   border: none;
   margin: 4px 2px;
   padding: 15px 32px;
@@ -141,9 +81,9 @@ section img {
 }
 
 #popupBody .buttonClean {
-  width: 48%;
   color: #fff;
   text-align: center;
+  width: 48%;
   background-color: red;
   border: none;
   margin: 4px 2px;
@@ -164,6 +104,53 @@ section img {
   right: 30px;
 }
 
+* span {
+  font-size: 250%;
+}
+
+header {
+  color: #000;
+  height: 20%;
+  background-color: #c7a98a;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+header nav ul {
+  height: auto;
+  height: 100%;
+  justify-items: center;
+  display: flex;
+}
+
+header nav li {
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  font-size: 140%;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header nav li:hover {
+  text-decoration: underline;
+}
+
+@font-face {
+  font-family: architects_daughterregular;
+  font-style: normal;
+  font-weight: normal;
+  src: url("ArchitectsDaughter-Regular.ea844ea7.ttf") format("woff2"), url("ArchitectsDaughter-Regular.ea844ea7.ttf") format("woff");
+}
+
+body {
+  cursor: url("https://cur.cursors-4u.net/sports/spo-7/spo722.cur"), auto;
+  background-color: #cebfaf;
+  margin: 0;
+  font-family: architects_daughterregular;
+}
+
 footer {
   background-color: #7d5a35;
   justify-content: space-between;
@@ -175,6 +162,108 @@ footer {
 footer .rrss {
   align-items: center;
   display: flex;
+}
+
+section {
+  background-color: #c7a98a;
+  border: 1px solid #000;
+  border-radius: 60px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 1%;
+  padding: 8%;
+  display: flex;
+}
+
+section div {
+  text-align: center;
+  width: 200px;
+  align-content: center;
+}
+
+section div a {
+  color: #000;
+  text-decoration: none;
+}
+
+section img {
+  height: 497px;
+  width: 200px;
+}
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  background: #000000b3;
+  transition: opacity .5s;
+  position: fixed;
+  inset: 0;
+}
+
+.overlay:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+#popupBody {
+  width: 20%;
+  background: #c7a98a;
+  border-radius: 15px;
+  margin: 20% auto;
+  padding: 2%;
+  font-size: 20px;
+  transition: all 5s ease-in-out;
+  position: relative;
+  bottom: 30%;
+  box-shadow: 0 0 5px #7d5a35;
+}
+
+#popupBody .sendClean input {
+  height: 100%;
+  width: 100%;
+}
+
+#popupBody input {
+  height: 20px;
+  width: 100%;
+}
+
+#popupBody .buttonSend {
+  color: #fff;
+  text-align: center;
+  width: 48%;
+  background-color: #4caf50;
+  border: none;
+  margin: 4px 2px;
+  padding: 15px 32px;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#popupBody .buttonClean {
+  color: #fff;
+  text-align: center;
+  width: 48%;
+  background-color: red;
+  border: none;
+  margin: 4px 2px;
+  padding: 15px 32px;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#cerrar {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .2s;
+  position: absolute;
+  top: 20px;
+  right: 30px;
 }
 
 /*# sourceMappingURL=piezas.53b08978.css.map */

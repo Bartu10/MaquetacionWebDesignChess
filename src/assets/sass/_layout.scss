@@ -1,0 +1,61 @@
+*{
+    span{
+        font-size: 250%;
+    }
+}
+header{
+    align-items: center;
+    background-color: #C7A98A;
+    color: black;
+    display: flex;
+    height: 20%;    
+    justify-content: space-between;
+    
+    nav ul{
+        display: flex;
+        height: auto;
+        height: 100%;
+        justify-items: center;
+    }
+    nav li{
+        color: black;
+        display: inline-block;
+        font-size: 140%;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    nav li:hover{
+        text-decoration:underline;
+    }
+}
+
+
+@font-face {
+    font-family: 'architects_daughterregular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Architects-Daughter-Regular/architectsdaughter/ArchitectsDaughter-Regular.ttf') format('woff2'),
+         url('fonts/Architects-Daughter-Regular/architectsdaughter/ArchitectsDaughter-Regular.ttf') format('woff');
+}
+body{
+    background-color: #CEBFAF;
+    cursor: url(https://cur.cursors-4u.net/sports/spo-7/spo722.cur), auto ;
+    font-family: 'architects_daughterregular' ;
+    margin: 0; 
+}
+footer{
+    background-color: #7D5A35;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 1%;
+    .rrss{
+        align-items: center;
+        display: flex;
+    }
+}
+
+
+
