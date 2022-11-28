@@ -1,80 +1,26 @@
-@font-face {
-    font-family: 'architects_daughterregular';
-    src: url('fonts/Architects-Daughter-Regular/architectsdaughter/ArchitectsDaughter-Regular.ttf') format('woff2'),
-         url('fonts/Architects-Daughter-Regular/architectsdaughter/ArchitectsDaughter-Regular.ttf') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import 'components';
+@import 'base';
+@import 'layout';
 
-header{
-    color: black;
-    background-color: #C7A98A;
-    display: flex;    
-    justify-content: space-between;
-    align-items: center;
-    height: 20%;
-    .barrabusqueda{
-        padding: 15px;
-        height: 80%;
-        width: 400px;
-    }
-    nav ul{
-        justify-items: center;
-        height: auto;
-        height: 100%;
-    }
-    nav li{
-        padding: 10px;
-        display: inline-block;
-        text-align: center;
-        font-size: 140%;
-        color: black;  
-        a{
-            text-decoration: none;
-            color: black;
-        }
-        
-          
-    }
-    nav li:hover{
-        text-decoration:underline;
-    }
-    .logo{
-        height: 60px;
-        width: 60px;
-    }
-    .chess{
-        text-decoration: none;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-body{
-    margin: 0;
-    font-family: 'architects_daughterregular' ;
-    background-color: #CEBFAF;
-    cursor: url(https://cur.cursors-4u.net/sports/spo-7/spo722.cur), auto ; 
-}   
-span{
-    font-size: 250%;
-}
-
+   
 section{
-    margin: 1%;
-    border: solid 1px black;
-    padding: 8%;
-    border-radius: 60px;
+    align-items: baseline;
     background-color: #C7A98A;
+    border: solid 1px black;
+    border-radius: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: baseline;
+    margin: 1%;
+    padding: 8%;
     div{
-        text-align: center;
         align-content: center;
+        text-align: center;
         width: 200px;
+        a{
+            color: black;
+            text-decoration: none;
+        }
     }
     img{
         height: 497px;
@@ -83,22 +29,31 @@ section{
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
+    background: rgba(0, 0, 0, 0.7);
     bottom: 0;
     left: 0;
+    opacity: 0;
+    position: fixed;
     right: 0;
-    background: rgba(0, 0, 0, 0.7);
+    top: 0;
     transition: opacity 500ms;
     visibility: hidden;
-    opacity: 0;
 }
 .overlay:target {
-    visibility: visible;
     opacity: 1;
+    visibility: visible;
 }
 #popupBody{
+    background: #C7A98A;
+    border-radius: 15px;
     bottom: 30%;
+    box-shadow: 0 0 5px #7D5A35;
+    font-size: 20px;
+    margin: 20% auto;
+    padding: 2%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    width: 20%;
     .sendClean{
         input{
             height: 100%;
@@ -111,56 +66,36 @@ section{
     }
     .buttonSend {
         background-color: #4CAF50;
-        width: 48%;
         border: none;
         color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
         display: inline-block;
         font-size: 16px;
         margin: 4px 2px;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        width: 48%;
     }
     .buttonClean{
         background-color: #F00;
-        width: 48%;
         border: none;
         color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
         display: inline-block;
         font-size: 16px;
         margin: 4px 2px;
-    }
-    font-size: 20px;
-    width: 20%;
-    padding: 2%;
-    border-radius: 15px;
-    box-shadow: 0 0 5px #7D5A35;
-    background: #C7A98A;
-    position: relative;
-    transition: all 5s ease-in-out;
-    margin: 20% auto;    
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        width: 48%;
+    }    
 }
 #cerrar{
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
+    color: #F00;
     font-size: 30px;
     font-weight: bold;
+    position: absolute;
+    right: 30px;
     text-decoration: none;
-    color: #F00;
-}
-footer{
-    background-color: #7D5A35;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 1%;
-    padding-right: 1%;
-    .rrss{
-        display: flex;
-        align-items: center;
-    }
+    top: 20px;
+    transition: all 200ms;
 }
