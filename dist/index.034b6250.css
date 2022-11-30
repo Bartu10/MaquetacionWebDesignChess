@@ -1,3 +1,8 @@
+* {
+  color: #000;
+  text-decoration: none;
+}
+
 * span {
   font-size: 250%;
 }
@@ -23,7 +28,6 @@ header nav li {
   text-align: center;
   padding: 10px;
   font-size: 140%;
-  text-decoration: none;
   display: inline-block;
 }
 
@@ -218,15 +222,15 @@ body {
 
 .section2 #city1 {
   position: absolute;
-  top: 155%;
-  left: 0%;
+  top: 165%;
+  left: -3%;
   transform: rotate(-90deg);
 }
 
 .section2 #city2 {
   position: absolute;
-  top: 155%;
-  right: 0%;
+  top: 165%;
+  right: -3%;
   transform: rotate(90deg);
 }
 

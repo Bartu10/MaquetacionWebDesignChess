@@ -55,15 +55,15 @@ body{
         }
     
         #city1{
-            left: 0%;
+            left: -3%;
             position: absolute;
-            top: 155%;
+            top: 165%;
             transform: rotate(-90deg);
         }
         #city2{
             position: absolute;
-            right: 0%;
-            top: 155%;
+            right: -3%;
+            top: 165%;
             transform: rotate(90deg);
     
         }
@@ -72,4 +72,6 @@ body{
             padding-bottom: 4%;
             width: 600px;
             }
-    }
+    }      
+
+      

@@ -21,22 +21,24 @@ section{
         width: 200px;
     }
     article{
-        width: 350px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
         h1{
             font-size: xx-large;
             text-decoration: underline;
         }
         span{
             font-size: x-large;
+            
 
         }
         .bloq{
             background-color: #7D5A35;
             border: solid #7D5A35 1px;
             padding: 1cm;
-
+            width: 85%;
         }
     }
 }
-
 
