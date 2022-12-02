@@ -131,11 +131,11 @@ footer .rrss {
   width: 100%;
 }
 
-#popupBody .buttonSend {
+#popupBody .buttonClean {
   color: #fff;
   text-align: center;
   width: 48%;
-  background-color: green;
+  background-color: red;
   border: none;
   margin: 4px 2px;
   padding: 15px 32px;
@@ -144,11 +144,11 @@ footer .rrss {
   display: inline-block;
 }
 
-#popupBody .buttonClean {
+.buttonSend {
   color: #fff;
   text-align: center;
   width: 48%;
-  background-color: red;
+  background-color: green;
   border: none;
   margin: 4px 2px;
   padding: 15px 32px;
@@ -319,7 +319,7 @@ body {
   position: relative;
 }
 
-.carta-box:hover .carta {
+.carta-box.carta {
   transform: rotateY(180deg);
 }
 
@@ -335,6 +335,10 @@ body {
 
 .cara.detras {
   transform: rotateY(180deg);
+}
+
+.buttonSend {
+  padding: 15px 32px;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */

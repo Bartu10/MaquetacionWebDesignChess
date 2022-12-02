@@ -1,0 +1,34 @@
+@import 'components';
+@import 'base';
+@import 'layout';
+
+body{
+    background-color: #cebfaf;
+}
+section{
+    h4,span{text-align: center;}
+
+    form{
+padding: 9.80%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+input, select{
+    width: 30%;
+    height: 30px;
+}
+
+textarea {
+    width: 30%;
+    height: 80px;
+}
+.buttonSend{
+    padding: 2px 100px;
+    width: auto;
+  }
+div{
+    text-align: center;
+}
+}

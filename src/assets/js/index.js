@@ -1,4 +1,5 @@
-$('.flip-container .flipper').click(function() {
-	$(this).closest('.flip-container').toggleClass('hover');
-    $(this).css('transform, rotateY(180deg)');
-});
+document.querySelectorAll(".cara").forEach(function(elemento) {
+    elemento.addEventListener("click", function() {
+      this.classList.toggle("detras");
+    });
+  });

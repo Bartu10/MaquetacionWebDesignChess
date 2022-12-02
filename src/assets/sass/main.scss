@@ -82,7 +82,7 @@ body{
         perspective: 1000px;
       }
       
-      .carta-box:hover .carta {
+      .carta-box.carta {
           transform: rotateY(180deg);
       }
       
@@ -98,4 +98,8 @@ body{
       
       .cara.detras {
         transform: rotateY(180deg);
+      }
+
+      .buttonSend {
+        padding: 15px 32px;
       }

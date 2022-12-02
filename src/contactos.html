@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/sass/contactos.scss">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="chess"><img src="./assets/images/4-2-chess-png-picture.png" class="logo">
+        <span>CHESS.COM</span></a>
+        <input class ="barrabusqueda" type="text" name="nombrecompleto" placeholder="Ej: Rey">
+        <nav>
+            <ul>
+                <li><a href="#popup">Login</a></li>
+                <li><a href="piezas.html">Piezas</a></li> 
+                <li><a href="contactos.html">Contacto</li>
+                <li><img class="perfilfoto" src="assets/images/6378141.png"></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+
+        <form>
+            <span>CONTACTO</span>
+            <h4>Si tienes alguna duda, consulta o problema, 
+                puedes contactar con nosotros aqui</h4>
+          <label>Nombre Completo</label>
+          <input type="text" name="firstname" placeholder="Tu nombre...">
+          <label>Sexo</label>
+          <select id="sexo" name="sexo">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="otro">Otro</option>
+            <option value="NotIntroduced">Prefiero No Decirlo</option>
+          </select>
+          <label>Correo</label>
+          <input type="text" id="correo" name="correo" placeholder="Ingrese su correo...">
+      
+          <label for="subject">Problema</label>
+          <textarea id="problema" name="problema" placeholder="Ingrese su problema..."></textarea>
+          <br>
+          <div class="sendClean"><input type="button" class="buttonSend" value="Enviar"></div>
+        </form>
+    </section>
+      <footer>
+        <span>@ 2022 Cádiz ESP, Inc All rights reserved.</span>
+        <div class="rrss">
+            <img src="assets/images/Vectorrrss.png">
+            <img src="assets/images/Vectorrrss-1.png">
+            <img src="assets/images/Group 19rrss.png">
+        </div>
+    </footer>
+</body>
+</html>
