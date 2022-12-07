@@ -32,13 +32,25 @@ header{
     }
 
 }
-
-@media(max-width:400px) {
-    nav a {
-      text-align: center;
-      float: none;
+@media(max-width:850px) {
+*{
+    font-size: 95%;
+}
+header{
+    flex-direction: column;
+    .barrabusqueda{
+        display: none;
+    }
+    nav{
+        ul{
+            float:none;
+            display: block;
+        }
     }
 }
+
+}
+
 @font-face {
     font-family: 'architects_daughterregular';
     font-style: normal;
