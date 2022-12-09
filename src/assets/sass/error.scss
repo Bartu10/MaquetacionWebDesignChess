@@ -1,0 +1,108 @@
+@import 'components';
+@import 'base';
+@import 'layout';
+
+$whity: #cfd8dc;
+$blacky: #37474f;
+$ad: 2s; //animation duration
+$deld: $ad/16;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #c7a98a;
+}
+
+p{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: xx-large;
+    text-align: center;
+    animation: CambioColor 10s infinite;
+}
+@keyframes CambioColor {
+    0% {color:black} 
+    20%{color: #cfd8dc;}
+    40%{color: darkgray;}
+    60%{color:grey;}
+    80%{color:dimgray;}
+    100%{color: black;}
+
+}
+.container{
+  width: 80vmin;
+  height: 80vmin;
+  margin: 1vmin auto;
+  animation: c $ad infinite linear;
+  overflow: hidden;
+}
+
+.square{
+  display: block;
+  float: left;
+  width: calc(100%/8);
+  height: calc(100%/8);
+  animation: clockwise $ad infinite linear;
+  @for $i from 0 to 4 {
+    &:nth-child(n+#{$i*16+1}):nth-child(-n+#{$i*16+8}){
+      background-color: $whity;
+      animation-delay: $i*$deld;
+      &:nth-child(odd){
+        background-color: $blacky;
+        animation-name: counter-clockwise;
+        animation-delay: $ad/2 + $i*$deld;
+      }
+    }
+    &:nth-child(n+#{$i*16+9}):nth-child(-n+#{$i*16+16}){
+      animation-delay: $deld/2 + $i*$deld;
+      background-color: $whity;
+      &:nth-child(even){
+        animation-name: counter-clockwise;
+        background-color: $blacky;
+        animation-delay: $ad/2 + $deld/2 + $i*$deld;
+      }
+    }
+  }
+}
+
+
+
+@keyframes clockwise {
+  15%{
+    transform: rotate(0.125turn) scale(0.5,0.5);
+  }
+  30%{
+    transform: rotate(0.25turn) scale(1,1);
+  }
+  100%{
+    transform: rotate(0.25turn) scale(1,1);
+  }
+}
+@keyframes counter-clockwise {
+  15%{
+    transform: rotate(-0.125turn) scale(0.5,0.5);
+  }
+  30%{
+    transform: rotate(-0.25turn) scale(1,1);
+  }
+  100%{
+    transform: rotate(-0.25turn) scale(1,1);
+  }
+}
+@keyframes c {
+  0% { 
+     background-color: $blacky;
+  }
+  50% { 
+     background-color: $blacky;
+  }
+  51% { 
+     background-color: $whity;
+  }
+  100%{
+    background-color: $whity;
+  }
+}

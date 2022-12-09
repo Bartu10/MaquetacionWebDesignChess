@@ -28,7 +28,7 @@
 
 .overlay {
     background: rgba(0, 0, 0, 0.7);
-    bottom: 0;
+    bottom: 10;
     left: 0;
     opacity: 0;
     position: fixed;
@@ -99,66 +99,33 @@
     transition: all 200ms;
 }
 
-.flipCard {
-    perspective: 800;
-     width: 400px;
-     height: 200px;
-     position: relative;
-     margin: 50px auto;
-  }
-  .flipCard .card.flipped {
-    transform:rotatey(-180deg);
-  }
-  .flipCard .card {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: 0.5s;
-  }
-  .flipCard .card .side {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    cursor: pointer;
-    position: absolute;
-    box-sizing: border-box;
-    z-index: 2;
-    backface-visibility: hidden;  /* W3C */
-    box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    overflow: auto;
-  }
-  .flipCard .card .back {
-    background: white;
-    color: black;
-    transform:rotatey(-180deg);
-  }
-  
-  .flipCard .card .front {
-    font-family: Georgia;
-    font-size: 3em;
-    text-align: center;
-    line-height: 160px;
-    background-color: #7030a0;
-    border: 3px solid white;
-    color: white;
-  
-  }
-  .flipCard .card .back {
-    background-color: #dbb2f9;
-    border: 3px solid white;
-    text-align: center;
-    color: black;
-    padding-top: 50px;
-    font-family: Georgia;
-    font-size: 2em;
-  }
 
   .img1{
     width: 300%;
     height: 300%;
   }
 
-.icons{
-    height: 15px;
-    width: 15px;
+
+.infoPersonal{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 2px solid #7D5A35;
+    border-radius: 20px;
+}
+
+.iconUser{
+    width: 200px;
+}
+
+.eloRank{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+.rank{
+    border: green;
+    background-color: green;
+    border-radius: 10px;
+    width: 20%;
+}
 }

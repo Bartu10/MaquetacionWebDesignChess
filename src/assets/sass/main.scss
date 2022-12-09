@@ -16,8 +16,6 @@ body{
     .textoinicio{
         background-color: #C7A98A;
         border: solid 2px #C7A98A;    
-        font-size: 300%;
-        font-weight: 100;
         padding: 2%;
         position: absolute;
         right: 32%;
@@ -75,33 +73,97 @@ body{
             width: 600px;
             }
     }
+@media(max-width:1600px){
 
-    .carta-box {
-        margin: 100px;
-        width: 200px;
-        height: 250px;
-        position: relative;
-        perspective: 1000px;
-      }
-      
-      .carta-box.carta {
-          transform: rotateY(180deg);
-      }
-      
-      .carta {
-        transform-style: preserve-3d;
-        transition: all 0.5s linear;
-      }
-      
-      .cara {
-        position: absolute;
-        backface-visibility: hidden;
-      }
-      
-      .cara.detras {
-        transform: rotateY(180deg);
-      }
+    .textoinicio{
+        right: 30%;
+    }
+}
+@media(max-width:1500px){
 
-      .buttonSend {
-        padding: 15px 32px;
-      }
+    .textoinicio{
+        right: 28%;
+    }
+    .section{
+    #city1{
+        left: -100px;
+    }
+    #city2{
+        right: -100px;
+    }
+}
+}
+@media(max-width:1400px){
+    .section{
+        #city1{
+            left: -8%;
+        }
+        #city2{
+            right: -8%;
+        }
+    }
+    .textoinicio{
+        right: 26%;
+    }
+}
+@media(max-width:1300px){
+
+    .textoinicio{
+        right: 24%;
+    }
+}
+@media(max-width:1100px){
+    .textoinicio{
+        right: 22%;
+        top:50%
+    }
+}
+@media(max-width:950px){
+    .textoinicio{
+        right:24%;
+        top:47%;
+    }
+}
+@media(max-width:850px){
+    .textoinicio{
+        right:25%;
+        top:45%;
+    }
+}
+@media(max-width:800px){
+    .textoinicio{
+        right: 20%;
+        top:40%;
+    }
+}
+@media(max-width:750px){
+    .textoinicio{
+        top:34%
+    }
+}
+@media(max-width:700px){
+    .textoinicio{
+        right: 18%;
+    }
+}
+
+@media(max-width:650px){
+    .textoinicio{
+        right: 16%;
+        top:30%
+    }
+}
+
+@media(max-width:600px){
+    .textoinicio{
+        right: 10%;
+        top:26%
+    }
+}
+@media(max-width:550px){
+    .textoinicio{
+        right: 7%;
+        top:22%
+    }
+}
+
