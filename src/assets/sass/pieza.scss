@@ -1,0 +1,88 @@
+@import 'components';
+@import 'layout';
+@import 'base';
+
+@media (prefers-color-scheme: light){
+    section{
+        background-color: $base;
+        border: solid 1px $letter_color;
+        article{
+            .bloq{
+                background-color: $base2;
+                border: solid $base2 1px;                                       //Los elementos que coloco aqui son los que cambiare con el modo claro
+            }
+        }
+    }
+
+}
+
+@media (prefers-color-scheme: dark){
+    section{
+        background-color: $baseNight;
+        border: solid 1px $letter_colorNight;
+        article{.bloq{
+                background-color: $base2Night;                                      //Los elementos que coloco aqui son los que cambiare con el modo oscuro
+                border: solid $base2Night 1px;
+            }
+        }
+    }
+
+}
+section{
+
+    border-radius: 60px;
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
+    padding: 8%;
+
+    div{
+        align-content: center;
+        text-align: center;
+        width: 200px;
+        
+    }
+    img{
+        height: 497px;
+        width: 200px;
+    }
+    article{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-size: xx-large;
+            text-decoration: underline;
+        }
+        span{
+            font-size: x-large;            
+
+        }
+        .bloq{
+            padding: 1cm;
+            width: 20vw;
+        }
+    }
+}
+
+@media(max-width:850px){
+section{
+    flex-direction: column;
+    align-items: center;
+    img{
+       width: 100px; 
+       height: 200px;
+    }
+    article{
+    span{
+        font-size: small;
+        width: 35vw;    
+    }
+}
+}
+}
+
+.bloq .oscuro{
+    background-color: $base2Night;
+    border: $base2Night;
+}

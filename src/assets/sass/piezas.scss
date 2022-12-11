@@ -1,0 +1,45 @@
+@import 'components';
+@import 'layout';
+@import 'base';
+
+@media (prefers-color-scheme: light){
+section{
+    background-color: $base;
+    border: solid 1px $letter_color;
+    a{                                              //Los elementos que coloco aqui son los que cambiare con el modo claro
+        color: $letter_color;
+    }
+}
+}
+@media (prefers-color-scheme: dark){
+    section{
+        background-color: $baseNight;
+        border: solid 1px $letter_colorNight;       //Los elementos que coloco aqui son los que cambiare con el modo oscuro
+        a{
+            color: $letter_colorNight;
+        }
+    }
+    }
+section{
+    align-items: baseline;
+    border-radius: 60px;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+    margin: 1%;
+    padding: 8%;
+
+    div{
+        align-content: center;
+        text-align: center;
+        width: 200px;                                       //Simplemente coloco los elementos de la web
+        a{
+            text-decoration: none;
+        }
+    }
+    img{
+        height: 497px;
+        width: 200px;
+    }
+}
+
